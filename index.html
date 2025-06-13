@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-700 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
+    <h1 class="text-3xl font-bold mb-4">⏱ Stopwatch</h1>
+    
+    <div id="display" class="text-5xl font-mono text-blue-600 mb-6">00:00:00</div>
+    
+    <div class="flex justify-center gap-4 mb-4">
+      <button id="startBtn" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Start</button>
+      <button id="pauseBtn" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Pause</button>
+      <button id="resetBtn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Reset</button>
+      <button id="flagBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Flag</button>
+    </div>
+
+    <ul id="flags" class="text-left mt-4 max-h-40 overflow-y-auto">
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
